@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css'
+const pageTitle = "Pagina Principal";
 
 ---
 
@@ -8,16 +10,20 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Sitio Principal</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<header>
 			<a href="/">Inicio</a>
 			<a href="/about">Sobre mi</a>
 			<a href="/blog">Blog</a>
-
 		</header>
-		<h1>Sitio Principal</h1>
-		<p>pagina con blog</p>
+		<h1>{pageTitle}</h1>
+		<p>aqui va  lo que voy aprendiendo</p>
+		<ul>
+			<li> <a href="/post/post-1"> primer publicacion de un post con markdown</a></li>
+			<li><a href="/post/post-2">Publicación 2</a></li>
+      <li><a href="/post/post-3">Publicación 3</a></li>
+		</ul>
 	</body>
 </html>
