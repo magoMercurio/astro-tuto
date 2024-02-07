@@ -1,4 +1,5 @@
 ---
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
 
@@ -17,13 +18,8 @@ const pageTitle = "Blog";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		body>
-		<header>
-			<a href="/">Inicio</a>
-			<a href="/about">Sobre mi</a>
-			<a href="/blog">Blog</a>
-		</header>
+		<Navigation />
 		<h1>{pageTitle}</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti maiores deserunt officiis? Neque fugiat voluptatibus voluptas dolor impedit non ullam beatae blanditiis assumenda voluptatum perferendis facilis, delectus sequi facere?</p>
-	</body>
+	</Navigation>
 </html>
